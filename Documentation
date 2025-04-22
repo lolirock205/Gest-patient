@@ -1,1 +1,96 @@
+Voici une documentation complète pour le projet de gestion des patients d’un hôpital 
+
+Documentation du projet – Gestion des Patients d’un Hôpital
+
+Présentation
+
+Ce projet est une application web permettant de gérer les patients d’un hôpital. Il inclut :
+
+Une interface web (HTML/CSS) pour afficher et ajouter des patients.
+
+Un backend Node.js (Express) pour gérer les requêtes.
+
+Une base de données MySQL pour stocker les informations des patien
+
+Fonctionnalités
+
+Connexion (admin simple)
+
+Affichage de la liste des patients
+
+Ajout d’un nouveau patient via un formulaire
+
+Communication avec une base de données via API REST
+
+Technologies utilisées
+Installation du projet
+1. Prérequis
+Node.js et npm installés
+MySQL installé et configuré
+2. Cloner le projet
+git clone https://github.com/votre-utilisateur/hospital-patient-management.git
+cd hospital-patient-management
+
+3. Installer les dépendances
+
+cd backend
+npm install
+
+4. Configurer la base de données
+
+Créer une base de données MySQL nommée hopital :
+
+CREATE DATABASE hopital;
+
+USE hopital;
+
+CREATE TABLE patients (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(100),
+  prenom VARCHAR(100),
+  date_naissance DATE
+);
+
+5. Configurer les variables d’environnement
+
+Créer un fichier .env dans /backend :
+
+DB_USER=root
+DB_PASSWORD=VOTRE_MOT_DE_PASSE
+DB_NAME=hopital
+
+6. Lancer le serveur backend
+
+node server.js
+Utilisation
+Accès à l’interface
+Ouvrir le fichier frontend/index.html dans un navigateur.
+Connexion
+Connexion simple en envoyant admin / admin123 via une API (/api/auth/login).
+Ajout de patients
+Remplir le formulaire
+Les patients sont enregistrés dans la base de données et affichés automatiquement
+
+Structure du projet
+
+hospital-patient-management/
+├── frontend/          # Fichiers HTML, CSS
+├── backend/           # Serveur Node.js
+│   ├── server.js
+│   ├── db.js
+│   └── routes/
+├── database/          # Script SQL
+│   └── schema.sql
+└── README.md          # Documentatio
+
+
+
+
+
+
+
+---
+
+Souhaites-tu que je génère ce projet complet avec tous les fichiers dans une archive ZIP téléchargeable (avec le README.md inclus) ?
+
 
